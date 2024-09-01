@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frappuccino | Starbucks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function increase(counterId) {
+            const counterDisplay = document.querySelector(`#${counterId} .counter-display`);
+            let counter = parseInt(counterDisplay.innerText);
+            counter += 1;
+            counterDisplay.innerText = counter;
+        }
+
+        function decrease(counterId) {
+            const counterDisplay = document.querySelector(`#${counterId} .counter-display`);
+            let counter = parseInt(counterDisplay.innerText);
+            if (counter > 0) {
+                counter -= 1;
+            }
+            counterDisplay.innerText = counter;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="https://i.pinimg.com/736x/e8/ae/07/e8ae0724937f93b6139426580960636b.jpg" alt="Logo">
+        <nav class="navig">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Drinks.html">Drinks</a></li>
+                <li><a href="Sandwiches.html">Sandwiches</a></li>
+                <li><a href="Desserts.html">Desserts</a></li>
+                <li><a href="Terms of use.html">Terms Of Use</a></li>
+                <li><a href="Cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 class="headers">Frappuccino® Blended Beverages</h2>
+
+    <div class="card-container1">
+        <!-- Java Chip Frappuccino -->
+        <div class="card" id="fjcfdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/100501.webp" alt="Java Chip Frappuccino" class="fimg">
+                <div class="tags">| MILK | NUTS | SOY</div>
+            </div>
+            <div class="card-content">
+                <h3 id="fjcfh">Java Chip Frappuccino: Rs. 362.25</h3>
+                <p id="fjcfd">- Mocha sauce and Frappuccino® chips blended with Frappuccino® roast coffee, milk, and ice, then topped with whipped vanilla topping and mocha drizzle to bring you endless java joy.</p>
+                <div class="buttondiv" id="fjcfbdiv">
+                    <button onclick="decrease('fjcfbdiv')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('fjcfbdiv')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mocha Frappuccino -->
+        <div class="card" id="fmccfdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/100465.jpg" alt="Mocha Frappuccino" class="fimg">
+                <div class="tags">| MILK</div>
+            </div>
+            <div class="card-content">
+                <h3 id="fmccfh">Mocha Frappuccino: Rs. 409.50</h3>
+                <p id="fmccfd">- Coffee with rich mocha flavored sauce blended with milk and ice. Topped with whipped vanilla topping.</p>
+                <div class="buttondiv" id="fmccfbdiv">
+                    <button onclick="decrease('fmccfbdiv')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('fmccfbdiv')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mocha Cookie Crumble Frappuccino -->
+        <div class="card" id="fmcccfdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/M104008.webp" alt="Mocha Cookie Crumble Frappuccino" class="fimg">
+                <div class="tags">| MILK | SOY | WHEAT | NUTS</div>
+            </div>
+            <div class="card-content">
+                <h3 id="fmcccfh">Mocha Cookie Crumble Frappuccino: Rs. 514.50</h3>
+                <p id="fmcccfd">- Our Mocha Cookie Crumble Frappuccino is a deliciously flavored mocha indulgence - Blended Coffee meets chocolate and cookies for a perfect combination.</p>
+                <div class="buttondiv" id="fmcccfbdiv">
+                    <button onclick="decrease('fmcccfbdiv')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('fmcccfbdiv')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Triple Chocolate Frappuccino -->
+        <div class="card" id="ftcfdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/115472.webp" alt="Triple Chocolate Frappuccino" class="fimg">
+                <div class="tags">| MILK | SOY | NUTS</div>
+            </div>
+            <div class="card-content">
+                <h3 id="ftcfh">Triple Chocolate Frappuccino: Rs. 509.25</h3>
+                <p id="ftcfd">- An indulgent layered beverage, crafted with a combination of Mocha Sauce and milk, topped with Chocolate Whipped Topping and Mocha Drizzle.</p>
+                <div class="buttondiv" id="ftcfbdiv">
+                    <button onclick="decrease('ftcfbdiv')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('ftcfbdiv')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stardust Macchiato Frappuccino -->
+        <div class="card" id="fsmfdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/M107784.webp" alt="Stardust Macchiato Frappuccino" class="fimg">
+                <div class="tags">| MILK | SOY | NUTS</div>
+            </div>
+            <div class="card-content">
+                <h3 id="fsmfh">Stardust Macchiato Frappuccino: Rs. 493.50</h3>
+                <p id="fsmfd">- Super smooth and creamy vanilla half and half blended with ice, marked with an intense ristretto shot and cocoa dust.</p>
+                <div class="buttondiv" id="fsmfbdiv">
+                    <button onclick="decrease('fsmfbdiv')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('fsmfbdiv')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Double Chocolate Chip Frappuccino -->
+        <div class="card" id="fdccfdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/103515.webp" alt="Double Chocolate Chip Frappuccino" class="fimg">
+                <div class="tags">| MILK | NUTS | WHEAT | SOY</div>
+            </div>
+            <div class="card-content">
+                <h3 id="fdccfh">Double Chocolate Chip Frappuccino: Rs. 420.00</h3>
+                <p id="fdccfd">- Rich mocha-flavored sauce meets up with chocolaty chips, milk, and ice. Top it off with whipped vanilla topping and mocha drizzle for a real party in your mouth. A coffee-free delight.</p>
+                <div class="buttondiv" id="fdccfbdiv">
+                    <button onclick="decrease('fdccfbdiv')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('fdccfbdiv')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Strawberries and Crème Frappuccino -->
+        <div class="card" id="fsacfdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/103845.webp" alt="Strawberries and Crème Frappuccino" class="fimg">
+                <div class="tags">| MILK | STRAWBERRIES | NUTS</div>
+            </div>
+            <div class="card-content">
+                <h3 id="fsacfh">Strawberries and Crème Frappuccino: Rs. 383.25</h3>
+                <p id="fsacfd">- Strawberries and milk are blended with ice and topped with a swirl of whipped vanilla topping. A coffee-free delight.</p>
+                <div class="buttondiv" id="fsacfbdiv">
+                    <button onclick="decrease('fsacfbdiv')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('fsacfbdiv')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Green Tea Cream Frappuccino -->
+        <div class="card" id="fgtcfdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/100474.jpg" alt="Green Tea Cream Frappuccino" class="fimg">
+                <div class="tags">| MILK</div>
+            </div>
+            <div class="card-content">
+                <h3 id="fgtcfh">Green Tea Cream Frappuccino: Rs. 420.00</h3>
+                <p id="fgtcfd">- Smooth and creamy matcha is lightly sweetened and served with steamed milk.</p>
+                <div class="buttondiv" id="fgtcfbdiv">
+                    <button onclick="decrease('fgtcfbdiv')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('fgtcfbdiv')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vanilla Cream Frappuccino -->
+        <div class="card" id="fvcfdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/100471.jpg" alt="Vanilla Cream Frappuccino" class="fimg">
+                <div class="tags">| MILK</div>
+            </div>
+            <div class="card-content">
+                <h3 id="fvcfh">Vanilla Cream Frappuccino: Rs. 420.00</h3>
+                <p id="fvcfd">- Rich mocha-flavored sauce meets up with chocolaty chips, milk, and ice. Top it off with whipped vanilla topping and mocha drizzle for a real party in your mouth. A coffee-free delight.</p>
+                <div class="buttondiv" id="fvcfbdiv">
+                    <button onclick="decrease('fvcfbdiv')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('fvcfbdiv')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
