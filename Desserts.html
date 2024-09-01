@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts | Starbucks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function increase(counterId) {
+            const counterDisplay = document.querySelector(`#${counterId} .counter-display`);
+            let counter = parseInt(counterDisplay.innerText);
+            counter += 1;
+            counterDisplay.innerText = counter;
+        }
+
+        function decrease(counterId) {
+            const counterDisplay = document.querySelector(`#${counterId} .counter-display`);
+            let counter = parseInt(counterDisplay.innerText);
+            if (counter > 0) {
+                counter -= 1;
+            }
+            counterDisplay.innerText = counter;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="https://i.pinimg.com/736x/e8/ae/07/e8ae0724937f93b6139426580960636b.jpg" alt="Logo">
+        <nav class="navig">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Drinks.html">Drinks</a></li>
+                <li><a href="Sandwiches.html">Sandwiches</a></li>
+                <li><a href="Desserts.html">Desserts</a></li>
+                <li><a href="Terms of use.html">Terms Of Use</a></li>
+                <li><a href="Cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 class="headers">Desserts</h2>
+
+    <div class="card-container1">
+        <div class="card" id="srvcdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/115306_1.png" alt="Red Velvet Cookie" class="obimg">
+                <div class="tags">| WHEAT | MILK | SOY |</div>
+            </div>
+            <div class="card-content">
+                <h3 id="drvch">Red Velvet Cookie: Rs. 204.75</h3>
+                <p id="drvcd">- Soft, chewy crimson coloured cookie with a vanilla flavor, accented by a hint of tanginess. A crowd favourite flavour, now in a freshly baked cookie.</p>
+                <div class="buttondiv" id="counter1">
+                    <button onclick="decrease('counter1')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('counter1')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="scccdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/115307_1.jpg" alt="Chocolate Chip Cookie" class="obimg">
+                <div class="tags">| WHEAT | MILK | SOY |</div>
+            </div>
+            <div class="card-content">
+                <h3 id="dccch">Chocolate Chip Cookie: Rs. 204.75</h3>
+                <p id="dcccd">- Soft, chewy crimson coloured cookie with a vanilla flavor, accented by a hint of tanginess. A crowd favourite flavour, now in a freshly baked cookie.</p>
+                <div class="buttondiv" id="counter2">
+                    <button onclick="decrease('counter2')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('counter2')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="sdcccdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/107707.jpg" alt="Double Chocolate Chip Cookie" class="obimg">
+                <div class="tags">| WHEAT | MILK | SOY |</div>
+            </div>
+            <div class="card-content">
+                <h3 id="ddccch">Double Chocolate Chip Cookie: Rs. 294.00</h3>
+                <p id="ddcccd">- A soft and chewy Chocolate cookie topped with chocolate chips for the perfect textured bite.</p>
+                <div class="buttondiv" id="counter3">
+                    <button onclick="decrease('counter3')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('counter3')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container2">
+        <div class="card" id="sabcdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/101922.jpg" alt="Almond Butterscotch Cookie" class="obimg">
+                <div class="tags">| WHEAT | MILK | NUTS |</div>
+            </div>
+            <div class="card-content">
+                <h3 id="dabch">Almond Butterscotch Cookie: Rs. 299.25</h3>
+                <p id="dabcd">- A buttery cookie with a combination of crunchy Almond and Butterscotch.</p>
+                <div class="buttondiv" id="counter4">
+                    <button onclick="decrease('counter4')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('counter4')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="sccsdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/114551_1.jpg" alt="Classic Cinnamon Swirl" class="obimg">
+                <div class="tags">| WHEAT | MILK |</div>
+            </div>
+            <div class="card-content">
+                <h3 id="dccsh">Classic Cinnamon Swirl: Rs. 241.50</h3>
+                <p id="dccsd">- Sweet dough with cinnamon filling, topped with cream cheese icing and orange zest.</p>
+                <div class="buttondiv" id="counter5">
+                    <button onclick="decrease('counter5')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('counter5')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="scpdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/114938_1.jpg" alt="Custard Pinwheel" class="obimg">
+                <div class="tags">| WHEAT | MILK | SOY |</div>
+            </div>
+            <div class="card-content">
+                <h3 id="dcphead">Custard Pinwheel: Rs. 336.00</h3>
+                <p id="dcppara">- A croissant pastry baked into the shape of a pinwheel with vanilla custard filling inside. Decorated with a milk chocolate glaze on the outside. It is a decadent delight for your palette.</p>
+                <div class="buttondiv" id="counter6">
+                    <button onclick="decrease('counter6')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('counter6')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container3">
+        <div class="card" id="sctpdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/112592.webp" alt="Chocolate Truffle Pastry" class="obimg">
+                <div class="tags">| WHEAT | MILK | SOY | NUTS |</div>
+            </div>
+            <div class="card-content">
+                <h3 id="dctphead">Chocolate Truffle Pastry: Rs. 399.00</h3>
+                <p id="dctppara">- An absolute classic! A moist chocolate cake layered with whipped ganache and dark chocolate.</p>
+                <div class="buttondiv" id="counter7">
+                    <button onclick="decrease('counter7')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('counter7')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
