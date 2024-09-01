@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espresso | Starbucks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function increase(counterId) {
+            const counterDisplay = document.querySelector(`#${counterId} .counter-display`);
+            let counter = parseInt(counterDisplay.innerText);
+            counter += 1;
+            counterDisplay.innerText = counter;
+        }
+
+        function decrease(counterId) {
+            const counterDisplay = document.querySelector(`#${counterId} .counter-display`);
+            let counter = parseInt(counterDisplay.innerText);
+            if (counter > 0) {
+                counter -= 1;
+            }
+            counterDisplay.innerText = counter;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="https://i.pinimg.com/736x/e8/ae/07/e8ae0724937f93b6139426580960636b.jpg" alt="Logo">
+        <nav class="navig">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Drinks.html">Drinks</a></li>
+                <li><a href="Sandwiches.html">Sandwiches</a></li>
+                <li><a href="Desserts.html">Desserts</a></li>
+                <li><a href="Terms of use.html">Terms Of Use</a></li>
+                <li><a href="Cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 class="headers">Espresso</h2>
+
+    <div class="card-container1">
+        <div class="card" id="ecdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/112539.webp" alt="Cappuccino" class="obimg">
+                <div class="tags">| MILK | NUTS |</div>
+            </div>
+            <div class="card-content">
+                <h3 id="ech">Cappuccino: Rs. 257.25</h3>
+                <p id="ecd">- Dark, rich in flavour espresso lies in wait under a smoothed and stretched layer of thick foam. It's truly the height of our baristas' craft.</p>
+                <div class="buttondiv" id="counter1">
+                    <button onclick="decrease('counter1')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('counter1')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="emccldiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/M104014.webp" alt="Mocha Cookie Crumble Latte" class="obimg">
+                <div class="tags">| WHEAT | SOY | MILK |</div>
+            </div>
+            <div class="card-content">
+                <h3 id="emcclh">Mocha Cookie Crumble Latte: Rs. 420.00</h3>
+                <p id="emccld">- Our Mocha Cookie Crumble Latte is a deliciously flavoured mocha indulgence - Hot coffee meets chocolate and cookies for a perfect combination.</p>
+                <div class="buttondiv" id="counter2">
+                    <button onclick="decrease('counter2')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('counter2')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="esmdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/M107777.webp" alt="Stardust Macchiato" class="obimg">
+                <div class="tags">| MILK |</div>
+            </div>
+            <div class="card-content">
+                <h3 id="esmh">Stardust Macchiato: Rs. 414.75</h3>
+                <p id="esmd">- Super smooth and creamy vanilla half and half crowned with sweet and subtle cold foam, marked with an intense ristretto shot and cocoa dust.</p>
+                <div class="buttondiv" id="counter3">
+                    <button onclick="decrease('counter3')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('counter3')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container2">
+        <div class="card" id="ecadiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/100433.webp" alt="Caffe Americano" class="obimg">
+                <div class="tags">| BREWED COFFEE |</div>
+            </div>
+            <div class="card-content">
+                <h3 id="ecah">Caffe Americano: Rs. 267.75</h3>
+                <p id="ecad">- Rich in flavour, full-bodied espresso with hot water in true European style.</p>
+                <div class="buttondiv" id="counter4">
+                    <button onclick="decrease('counter4')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('counter4')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="ecmdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/100391.webp" alt="Caffè Mocha" class="obimg">
+                <div class="tags">| MILK |</div>
+            </div>
+            <div class="card-content">
+                <h3 id="ecmh">Caffè Mocha: Rs. 330.75</h3>
+                <p id="ecmd">- We combine our rich in flavour, full-bodied espresso with bittersweet mocha sauce and steamed milk, then top it off with whipped vanilla topping. The classic coffee drink to satisfy your sweet tooth.</p>
+                <div class="buttondiv" id="counter5">
+                    <button onclick="decrease('counter5')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('counter5')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="eiccdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/104072.webp" alt="Iced Chocolate Cappuccino" class="obimg">
+                <div class="tags">| MILK |</div>
+            </div>
+            <div class="card-content">
+                <h3 id="eicch">Iced Chocolate Cappuccino: Rs. 393.75</h3>
+                <p id="eiccd">- Signature Italian style Cappuccino with espresso shot, mocha sauce, steamed milk and a thick layer of foam, served over ice.</p>
+                <div class="buttondiv" id="counter6">
+                    <button onclick="decrease('counter6')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('counter6')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container3">
+        <div class="card" id="eiwmdiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/100485.webp" alt="Iced White Mocha" class="obimg">
+                <div class="tags">| MILK |</div>
+            </div>
+            <div class="card-content">
+                <h3 id="eiwmh">Iced White Mocha: Rs. 378.00</h3>
+                <p id="eiwmd">- Espresso combined with white mocha sauce and milk over ice. Topped with whipped vanilla topping.</p>
+                <div class="buttondiv" id="counter7">
+                    <button onclick="decrease('counter7')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('counter7')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="esediv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/100511.webp" alt="Solo Espresso" class="obimg">
+                <div class="tags">| BREWED COFFEE |</div>
+            </div>
+            <div class="card-content">
+                <h3 id="eseh">Solo Espresso: Rs. 257.25</h3>
+                <p id="esed">- Our smooth signature Espresso Roast and its caramelly sweetness is at the very heart of everything we do.</p>
+                <div class="buttondiv" id="counter8">
+                    <button onclick="decrease('counter8')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('counter8')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="ecldiv">
+            <div class="leftcardcontent">
+                <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/100377.jpg" alt="Caffe Latte" class="obimg">
+                <div class="tags">| MILK |</div>
+            </div>
+            <div class="card-content">
+                <h3 id="eclh">Caffe Latte: Rs. 257.25</h3>
+                <p id="ecld">- Our dark, rich in flavour espresso balanced with steamed milk and a light layer of foam. A perfect coffee warm up.</p>
+                <div class="buttondiv" id="counter9">
+                    <button onclick="decrease('counter9')" class="button">-</button>
+                    <span class="counter-display">0</span>
+                    <button onclick="increase('counter9')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
