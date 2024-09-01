@@ -9,23 +9,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-     <script>
-        function increase(counterId) {
-            const counterDisplay = document.querySelector(`#${counterId} .counter-display`);
-            let counter = parseInt(counterDisplay.innerText);
-            counter += 1;
-            counterDisplay.innerText = counter;
-        }
+<script>
+function increase(counterId) {
+        const counterDisplay = document.querySelector(`#${counterId} .counter-display`);
+        let counter = parseInt(counterDisplay.innerText);
+        counter += 1;
+        counterDisplay.innerText = counter;
+    }
 
-        function decrease(counterId) {
-            const counterDisplay = document.querySelector(`#${counterId} .counter-display`);
-            let counter = parseInt(counterDisplay.innerText);
-            if (counter > 0) {
-                counter -= 1;
-            }
-            counterDisplay.innerText = counter;
+    function decrease(counterId) {
+        const counterDisplay = document.querySelector(`#${counterId} .counter-display`);
+        let counter = parseInt(counterDisplay.innerText);
+        if (counter > 0) {
+            counter -= 1;
         }
-    </script>
+        counterDisplay.innerText = counter;
+    }
+</script>
 <body>
     <header>
         <img src="https://i.pinimg.com/736x/e8/ae/07/e8ae0724937f93b6139426580960636b.jpg" alt="Logo">
